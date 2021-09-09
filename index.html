@@ -16,11 +16,180 @@
 	<title>URL Shortener</title>
 </head>
 
+<!-- Main header that is fixed at the top of screen to display login/links -->
+
+<header id='fixed-header'>
+
+	<div id='header-title-container'>
+		<h2 class='shortly'>Shortly</h2>
+		<p class='header-links'>Features</p>
+		<p class='header-links'>Pricing</p>
+		<p class='header-links'>Resources</p>
+	</div>
+
+	<div id='login-or-hamburger-container'>
+		<button id='sign-up-button'>Sign up</button>
+		<button id='sign-in-button'>Login</button>
+	</div>
+
+</header>
+
+<div id='background-container'></div>
+
 <body>
 
+	<!-- Hero header with img/title -->
 
+	<div id='main-hero-container'>
 
-	<script src="script.js"></script>
+		<div id='hero-img-container'>
+			<div id='hero-img' src='./assets/illustration-working.svg'></div>
+		</div>
+
+		<div id='hero-text'>
+			<h1 id='hero-title'>More than just shorter links</h1>
+			<p id='hero-body'>Build your brands recognition and get detailed insights on how your links are performing.</p>
+			<button class='get-started'>Get Started</button>
+		</div>
+
+	</div>
+
+	<!-- Div for holding form for user to enter link to shorten -->
+
+	<div id='link-shorter-container'>
+
+		<form id='link-input-form' for='link-input'>
+			<input id='link-input' type='text' placeholder="Shorten a link here..." />
+			<button id='submit' type='submit'>Shorten it!</button>
+		</form>
+
+	</div>
+
+	<!-- container that will reuse these elements to add to list when user inputs links -->
+
+	<div id='user-shortened-links'>
+
+		<div class='shortened-link-container'>
+			<p class='inputted-link'>https://github.com/</p>
+
+			<div class='link-and-copy-container'>
+				<a class='shortened-link'>https://rel.ink/Q831e</a>
+				<button class='copy-link-btn'>Copy</button>
+			</div>
+
+		</div>
+
+		<div class='shortened-link-container'>
+			<p class='inputted-link'>https://github.com/</p>
+
+			<div class='link-and-copy-container'>
+				<a class='shortened-link'>https://rel.ink/Q831e</a>
+				<button class='copy-link-btn'>Copy</button>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Header text above stats features -->
+
+	<div id='stats-title-container'>
+		<h3 id='stats-title-text'>Advanced Statistics</h3>
+		<p id='stats-body-text'>Track how your links are performing across the web with our advanced statistics dashboard.
+		</p>
+	</div>
+
+	<!-- Container to hold stats features -->
+
+	<div id='stats-info-container'>
+
+		<hr />
+
+		<div class='stats-section' id='brand-recognition-container'>
+
+			<div class='stats-img' id='brand-recognition'></div>
+			<p class='stats-title'>Brand Recognition</p>
+			<p class='stats-body'>Boost your brand recognition with each click. Generic links don’t
+				mean a thing. Branded links help instil confidence in your content.</p>
+
+		</div>
+
+		<div class='stats-section' id='detailed-records-container'>
+
+			<div class='stats-img' id='detailed-records'></div>
+			<p class='stats-title'>Detailed Records</p>
+			<p class='stats-body'>Gain insights into who is clicking your links. Knowing when and where
+				people engage with your content helps inform better decisions.</p>
+
+		</div>
+
+		<div class='stats-section' id='fully-customizable-container'>
+
+			<div class='stats-img' id='fully-customizable'></div>
+			<p class='stats-title'>Fully Customizable</p>
+			<p class='stats-body'>Improve brand awareness and content discoverability through customizable
+				links, supercharging audience engagement.</p>
+
+		</div>
+
+	</div>
+
+	<!-- Boost your links today -->
+
+	<div id='boost-links-container'>
+
+		<h4>Boost your links today</h4>
+		<button class='get-started'>Get Started</button>
+
+	</div>
+
 </body>
+
+<footer id='footer'>
+
+	<div class='footer-section'>
+		<h3 class='shortly'>Shortly</h3>
+	</div>
+
+	<div class='footer-section' id='footer-links'>
+
+		<div class='footer-links-section'>
+			<p class='footer-links-title'>Features</p>
+			<p class='footer-link'>Link Shortening</p>
+			<p class='footer-link'>Branded Links</p>
+			<p class='footer-link'>Analytics</p>
+		</div>
+
+		<div class='footer-links-section'>
+			<p class='footer-links-title'>Resources</p>
+			<p class='footer-link'>Blog</p>
+			<p class='footer-link'>Developers</p>
+			<p class='footer-link'>Support</p>
+		</div>
+
+		<div class='footer-links-section'>
+			<p class='footer-links-title'>Company</p>
+			<p class='footer-link'>About</p>
+			<p class='footer-link'>Our Team</p>
+			<p class='footer-link'>Careers</p>
+			<p class='footer-link'>Contact</p>
+		</div>
+
+	</div>
+
+	<div class='footer-section'>
+
+		<div id='social-links'>
+			<img class='social-svg' src='./assets/icon-facebook.svg'></img>
+			<img class='social-svg' src='./assets/icon-twitter.svg'></img>
+			<img class='social-svg' src='./assets/icon-pinterest.svg'></img>
+			<img class='social-svg' src='./assets/icon-instagram.svg'></img>
+		</div>
+
+	</div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </html>
