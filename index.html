@@ -22,9 +22,9 @@
 
 	<div id='header-title-container'>
 		<h2 class='shortly'>Shortly</h2>
-		<p class='header-links'>Features</p>
-		<p class='header-links'>Pricing</p>
-		<p class='header-links'>Resources</p>
+		<a class='header-links' onclick='hideNavAndJump()'>Features</a>
+		<a class='header-links' onclick='hideNavAndJump()'>Pricing</a>
+		<a class='header-links' onclick='hideNavAndJump()'>Resources</a>
 	</div>
 
 	<div id='login-container'>
@@ -33,7 +33,24 @@
 	</div>
 
 	<div id='hamburger-container'>
-		<img src='./assets/menu_black_24dp.svg' />
+		<img onclick='showHideMobileNav()' src='./assets/menu_black_24dp.svg' />
+	</div>
+
+	<div id='mobile-nav'>
+
+		<div id='nav-links'>
+			<a onclick='hideNavAndJump()' class='nav-link'>Features</a>
+			<a onclick='hideNavAndJump()' class='nav-link'>Pricing</a>
+			<a onclick='hideNavAndJump()' class='nav-link'>Resources</a>
+		</div>
+
+		<hr />
+
+		<div id='nav-login-container'>
+			<button id='nav-sign-up-button'>Sign up</button>
+			<button id='nav-sign-in-button'>Login</button>
+		</div>
+
 	</div>
 
 </header>

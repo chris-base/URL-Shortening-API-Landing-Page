@@ -2,6 +2,7 @@ const links = [];
 let btnCount = 0;
 let linkCount = 0;
 let shouldUpdateBorder = false;
+let isShowingNav = false;
 
 const addNewLink = e => {
 
@@ -119,6 +120,32 @@ const resetInputField = () => {
 	}
 
 }
+
+const showHideMobileNav = () => {
+
+	if (isShowingNav) {
+		document.getElementById('mobile-nav').style.display = 'none';
+		isShowingNav = false;
+	} else {
+		document.getElementById('mobile-nav').style.display = 'flex';
+		document.getElementById('mobile-nav').style.flexDirection = 'column';
+		isShowingNav = true;
+	}
+
+}
+
+const hideNavAndJump = () => {
+
+	document.getElementById('mobile-nav').style.display = 'none';
+	isShowingNav = false;
+
+	document.getElementById('footer').scrollIntoView({
+		behavior: 'smooth'
+	});
+
+}
+
+
 
 document.getElementById('link-input-form').addEventListener('submit', addNewLink);
 
