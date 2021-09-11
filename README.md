@@ -46,7 +46,7 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 - REST API
-- [shrtcode API](https://app.shrtco.de/)
+- [gotiny-api](https://github.com/robvanbakel/gotiny-api)
 
 ### What I learned
 

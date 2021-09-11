@@ -214,6 +214,11 @@ html {
   background-color: #4ae0e0;
 }
 
+#link-shorter-container #submit:disabled {
+  cursor: not-allowed;
+  background-color: #c9c9c9;
+}
+
 #background-container {
   background-color: #eef0f6;
   width: 100%;
@@ -227,13 +232,11 @@ html {
 
 #user-shortened-links {
   margin: auto 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: none;
+}
+
+#user-shortened-links #clone-links-container {
+  display: none;
 }
 
 #user-shortened-links .shortened-link-container {
@@ -279,11 +282,12 @@ html {
 }
 
 #user-shortened-links .shortened-link-container .copy-link-btn {
+  width: 80px;
   color: white;
   background-color: #2acfcf;
   border: 0;
   border-radius: 5px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 0;
   cursor: pointer;
 }
 

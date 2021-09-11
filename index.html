@@ -59,7 +59,7 @@
 	<div id='link-shorter-container'>
 
 		<form id='link-input-form' for='link-input'>
-			<input id='link-input' type='text' placeholder="Shorten a link here..." />
+			<input oninput='resetInputField()' id='link-input' type='text' placeholder="Shorten a link here..." />
 			<button id='submit' type='submit'>Shorten it!</button>
 		</form>
 
@@ -69,22 +69,12 @@
 
 	<div id='user-shortened-links'>
 
-		<div class='shortened-link-container'>
+		<div class='shortened-link-container' id='clone-links-container'>
 			<p class='inputted-link'>https://github.com/</p>
 
 			<div class='link-and-copy-container'>
 				<a class='shortened-link'>https://rel.ink/Q831e</a>
-				<button class='copy-link-btn'>Copy</button>
-			</div>
-
-		</div>
-
-		<div class='shortened-link-container'>
-			<p class='inputted-link'>https://github.com/</p>
-
-			<div class='link-and-copy-container'>
-				<a class='shortened-link'>https://rel.ink/Q831e</a>
-				<button class='copy-link-btn'>Copy</button>
+				<button class='copy-link-btn' id='btn-copy'>Copy</button>
 			</div>
 
 		</div>

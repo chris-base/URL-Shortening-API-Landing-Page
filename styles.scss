@@ -184,6 +184,11 @@ html {
 			background-color: #4ae0e0;
 		}
 
+		&:disabled {
+			cursor: not-allowed;
+			background-color: #c9c9c9;
+		}
+
 	}
 
 }
@@ -202,9 +207,13 @@ html {
 
 #user-shortened-links {
 	margin: auto 150px;
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column-reverse;
+	display: none;
 
+	#clone-links-container {
+		display: none;
+	}
 
 	.shortened-link-container {
 		margin: 20px auto auto auto;
@@ -240,11 +249,12 @@ html {
 		}
 
 		.copy-link-btn {
+			width: 80px;
 			color: white;
 			background-color: $cyan;
 			border: 0;
 			border-radius: 5px;
-			padding: 10px 20px 10px 20px;
+			padding: 10px 0;
 			cursor: pointer;
 
 			&:hover {
