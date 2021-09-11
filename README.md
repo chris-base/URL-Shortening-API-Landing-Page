@@ -14,7 +14,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ## Overview
 
-
+This challenge is to make a website landing page for a url shortening product that uses the shrtcode API, although I did not use this API as it was very slow. I decided to use [gotiny-api](https://github.com/robvanbakel/gotiny-api) as it was much faster and also very easy to implement. This page has all the main components that a landing page would have, including the header, body, and a footer with all information about the product.
 
 ### The challenge
 
@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](URL-Shortener-cmbase-ss.png)
 
 ### Links
 
 - Live Site URL: [Live Site](https://chris-base.github.io/URL-Shortening-API-Landing-Page/)
-- Solution URL: [My Solution]()
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/url-shortener-using-html-scss-javascript-and-api-WckUNO9fX)
 
 ### Built with
 
@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-
+I learned a lot about local storage and keeping data even when the user is not on the webpage that could be used at a later date when the user needs it. I also learned about using functions that will be able to copy to a users clipboard for later use. This challenged helped me a lot with getting better at styling and responsiveness.
 
 ## Author
 
